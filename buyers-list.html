@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G3 Deals - Buyers List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    .navbar-brand { font-weight: bold; }
+    .btn-success { background-color: #16a34a; border-color: #16a34a; }
+    .btn-success:hover { background-color: #15803d; border-color: #15803d; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">G3 Deals</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="deals-for-sale.html">Deals for Sale</a></li>
+          <li class="nav-item"><a class="nav-link" href="deals-sold.html">Deals Sold</a></li>
+          <li class="nav-item"><a class="nav-link active" href="buyers-list.html">Buyers List</a></li>
+          <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Join Our Exclusive Buyers List</h2>
+      <p class="text-center mb-4">Get early access to off-market real estate deals.</p>
+      <form action="https://formspree.io/f/mjkobzrk" method="POST">
+        <input type="hidden" name="_to" value="G3Deals.Info@gmail.com">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="mb-3">
+              <label for="locations" class="form-label">Preferred Locations</label>
+              <input type="text" class="form-control" id="locations" name="locations">
+            </div>
+            <div class="mb-3">
+              <label for="property-types" class="form-label">Preferred Property Types</label>
+              <input type="text" class="form-control" id="property-types" name="property-types">
+            </div>
+            <div class="mb-3">
+              <label for="budget" class="form-label">Budget</label>
+              <input type="text" class="form-control" id="budget" name="budget">
+            </div>
+            <button type="submit" class="btn btn-primary">Join Now</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div class="position-fixed bottom-0 end-0 p-3">
+    <button class="btn btn-primary" onclick="alert('Grok integration coming soon!')">Need Help? Chat with Grok</button>
+  </div>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>© 2025 G3 Deals. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
